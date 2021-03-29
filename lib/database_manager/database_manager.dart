@@ -12,9 +12,4 @@ class DatabaseManager {
       'phoneNumber': phoneNumber,
     });
   }
-
-  // mengambil data user sekarang
-  Future getUserInfo() async {
-    return (await FirebaseAuth.instance.currentUser()).displayName;
-  }
 }
